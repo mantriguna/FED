@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Customer Registration</title>
+   </head>
+   <body>
+        <form align="center">
+             <h1>Customer Registration</h1><br><br>
+             <img src="customer.jpeg" ><br><br>
+            <label>User Name:</label><input type="text" placeholder="enter username" pattern="[A-Za-z]{15}" autofocus required>
+            <br><br>
+            <label>Password:</label><input type="password" placeholder="enter password" pattern="{8,12}" required><br><br>
+            <label>Email:</label><input type="text" placeholder="enter emailid" required><br><br>
+            <label>Gender</label><input type="radio" name="Gender" value="Male" required>
+            <label>Male</label>
+            <input type="radio" name="Gender" value="Female" required>
+            <label>Female</label>
+            <input type="radio" name="Gender" value="Other" required>
+            <label>Other</label><br><br>
+            <label>Age(Yrs)</label><input type="text" placeholder="12-60" pattern="{12,60}" required><br><br>
+            <label>Address</label><textarea rows="4" cols="20"<input type="text" placeholder="current address"></textarea><br><br>
+            <label>Company Website:</label><br><br>
+            <label for="country">Choose country:</label>
+            <select for="country">
+                      <option>India</option>
+                      <option>United States</option>
+                      <option>Germany</option>
+                      <option>Japan</option>
+            </select><br><br>
+            <label>Date of Journey:</label><input type="date" pattern="\d{4}-\d{2}-\d{2}" required><br><br>
+            <input type="submit" value="Submit" >&nbsp;&nbsp;
+            <input type="submit" value="Reset" >
+        </form>
+   </body>
+</html>
